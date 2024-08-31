@@ -6,11 +6,11 @@ import lombok.NoArgsConstructor;
 
 import jakarta.persistence.*;
 
-@Table(name = "cart")
+@Entity
+@Table(name = "employee")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-
 public class Employee {
 
     @Id
@@ -25,6 +25,5 @@ public class Employee {
 
     @Column(name = "email")
     private String email;
-
 
 }
