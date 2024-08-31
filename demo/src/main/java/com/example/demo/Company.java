@@ -6,7 +6,8 @@ import lombok.NoArgsConstructor;
 
 import jakarta.persistence.*;
 
-@Table(name = "Company")
+@Entity
+@Table(name = "company")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -16,10 +17,10 @@ public class Company {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "descricao")
-    private String descricao;
+    @Column(name = "description")
+    private String description;
 
     @Column(name = "room")
-    private String romm;
+    private String room;
 
 }
